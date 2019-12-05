@@ -18,15 +18,15 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+	/* vertical-align: baseline; */
 }
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older browsers
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: block; */
 }
 body {
 	line-height: 1;
@@ -49,7 +49,9 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid red;
+	max-width: 100%;
 }
 
 html, body {
@@ -64,3 +66,91 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+.container{
+	width: 1000px;
+	background: orange;
+	margin:0 auto;
+}
+
+header{
+	/* background: purple; */
+}
+
+nav{
+	background: yellow;
+	text-align: right;
+	padding: 10px;
+}
+
+.main{
+	background: pink;
+}
+
+#left{
+	background: rgb(192, 248, 255);
+	display: inline-block;
+	width: 49%;
+	padding: 5% 15%;
+	height: auto;
+	
+}
+
+#right{
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+	margin-top: 50px;
+	height: auto;
+}
+
+#title{
+	font-size: 60px;
+}
+
+button{
+	width: 125px;
+	padding: 5px;
+	font-size: 14px;
+	border: 1px solid black;
+	background: white;
+}
+
+.body-top{
+	background: rgb(168, 93, 93);
+	border-top: 1px solid black;
+}
+
+.body-top article{
+	width: 49%;
+	display: inline-block;
+}
+
+.body-img{
+
+}
+
+.body-bot{
+	background: teal;
+	border-bottom: 1px solid black;
+
+}
+
+footer{
+	background: lightgreen;
+}
+
+.logo{
+	display:inline-block;
+}
+
+.right {
+	display: inline-block;
+}
+
+nav a{
+	padding-right: 70px;
+}
+
+.bod-img{
+	align-content:right;
+}
