@@ -16,12 +16,12 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	/* margin: 0;
-	padding: 0; */
-	/* border: 0; */
+	margin: 0;
+	padding: 0;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
-	/* vertical-align: baseline; */
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers
 article, aside, details, figcaption, figure, 
@@ -68,9 +68,11 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 .container{
-	width: 1000px;
+	width: 900px;
 	/* background: orange; */
 	margin:0 auto;
+	box-sizing: border-box;
+	vertical-align: top;
 }
 
 header{                       
@@ -81,7 +83,8 @@ header{
 nav{
 	/* background: yellow; */
 	text-align: left;
-	padding: 5px;
+	padding: 5px 0 0 45px;
+	margin-top: 30px;
 }
 
 .main{
@@ -91,34 +94,37 @@ nav{
 #left{
 	/* background: rgb(192, 248, 255); */
 	display: inline-block;
-	width: 49%;
-	padding: 5% 15%;
+	width: 45%;
+	height: 400px;
+	/* padding: 5% 15%; */
 	text-align: center;
 	vertical-align: top;
-	margin-top:50px;
-	/* height: auto; */
-	
+	/* margin:0 auto; */
+	margin: 20px 0;
 }
+
+
 
 #right{
 	display: inline-block;
-	width: 49%;
+	width: 49.5%;
+	height: 400px;
 	text-align: center;
-	margin-top: 50px;
 	vertical-align: top;
-	/* height: auto; */
+	margin:0 auto;
+	margin: 20px 0;
 }
 
 #title{
-	font-size: 60px;
-	position: relative;
-	margin-top: 15%;
+	font-size: 80px;
+	display: inline-block;
+	padding-top:30px;
 	/* float: inline-start; */
 }
 
 button{
-	width: 125px;
-	padding: 5px;
+	width: 170px;
+	padding: 7px 0;
 	font-size: 14px;
 	border: 1px solid black;
 	background: white;
@@ -127,7 +133,9 @@ button{
 .body-top{
 	/* background: rgb(168, 93, 93); */
 	border-top: 1px solid black;
-	margin:15px;
+	margin:15px 0 25px 0;
+	padding-top: 30px;
+	line-height: 1;
 }
 
 .body-top article{
@@ -139,12 +147,14 @@ button{
 	/* background: teal; */
 	border-bottom: 1px solid black;
 	margin-top: 15px;
+	padding-bottom: 30px;
 }
 
 .body-bot article{
 	display: inline-block;
 	width: 33%;
-	padding: 
+	padding: 0 5px 0 5px;
+	line-height: 1;
 }
 
 footer{
@@ -158,24 +168,42 @@ footer{
 
 .right {
 	display: inline-block;
+	margin: 10px 0 40px 0;
+	padding: 0 0 0 40px;
 	
 }
 
 nav a{
-	padding-right: 70px;
+	padding-right: 10px;
+	margin: 20px;
+	color: gray;
+	text-decoration: none;
 }
 
-.bod-img{
-	padding-left: 5%;
-	padding-top: 15px;
+/* .bod-img{
+	padding: 10px 10px;
+} */
+
+.middle-img{
+	padding: 10px 0 10px 0;
+	width: 100%;
 }
 
-#copyright{
+.copyright{
 	text-align: center;
+	margin-top: 50px;
+}
+
+footer p{
+	line-height: 1;
+	padding-bottom: 15px;
+
 }
 
 address{
 	width: 20%;
+	line-height: 1;
+	padding-bottom: 15px;
 }
 
 
